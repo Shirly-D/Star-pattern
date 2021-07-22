@@ -4,20 +4,44 @@
 
 // 1.
 
-// 2. 
 
-// let m = 3;
-// let power = "";
-// for (let i = 1; i <= m; i++) {
-//     for (let j = 1; j < i ; j++){
-//         power = power + "";
-//     }
-//     power = power + "\n"
-// }
-// console.log(power);
+// 2.
 
+let n = 5;
+for (let i = 1; i <= n; i++)
+{
+    for (let j=i; j < n; j++) 
+    {
+        document.write("&nbsp;&nbsp; ");
+    }
+    for (j = 1; j <= 2*i - 1; j++)
+    {
+        if (j == 1 || j == 2*i-1 || i == n)
+        {
+            document.write("*" + " ");
+        }
+        else 
+        {
+            document.write("&nbsp;&nbsp; ");
+        }
 
+    }
+    document.write("<br>");
+}
 
+document.write("<br>");
+
+// 3.
+
+let m = 3;
+for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= i; j++) {
+        document.write(j**i + " ");
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
 
 
 // 4.
@@ -29,69 +53,75 @@ for (let i = 0; i < a; i++) {
     }
     document.write("<br>");
 }
-let b = 5;
-for (let i = 0; i < b; i++) {
-    for (let j = 0; j < b - i - 1; j++){
-        document.write(" ");
-    }
-    for (let k = 0; k < i + 1  ; k++) {
+let c = 5;
+for (let i = 1; i < c; i++) {
+    for (let j = 0; j <= i; j++) {
         document.write("*");
     }
     document.write("<br>");
 }
-let c = 4;
-let lower_tri = "";
-for (let i = 1; i <= c; i++) {
-    for (let j = 0; j <= i; j++) {
-        lower_tri = lower_tri + "*";
-    }
-    lower_tri = lower_tri + "\n";
-}
+
 let d = 5;
-let low_right = "";
-for (let i = 1; i <= d; i++) {
-    for (let j = 0; j < d - i; j++) {
-        low_right = low_right + "";
+for (let i = 0; i <= d; i++) {
+    for (let j = 1; j <= i; j++) {
+        document.write("&nbsp; ");
     }
-    for (let k = 0; k < i; k++){
-        low_right = low_right + "*";
+    for (let k = i; k <= n; k++){
+        document.write("*");
     }
-    low_right = low_right + "\n";
+    document.write("<br>");
 }
 
+let b = 5;
+for (let i = 1; i <= b; i++) {
+    for (let j = i; j <= b; j++){
+        document.write("&nbsp; ");
+    }
+    for (let k = 1; k <= i  ; k++) {
+        document.write("*");
+    }
+    document.write("<br>");
+}
+
+document.write("<br>");
 
 // 5.
 
 let e = 5;
-let tri_left = "";
 for (let i = 1; i <= e; i++) {
     for (let j = 0; j < i; j++) {
-        tri_left = tri_left + "*";
+        document.write("*");
     }
-    tri_left = tri_left + "\n";
+    document.write("<br>");
 }
 let f = 5;
-let  tri_right = "";
 for (let i = 0; i < f; i++) {
     for (let j = 0; j <  a - i; j++) {
-        tri_right = tri_right + "*";
+        document.write("*");
     }
-    tri_right = tri_right + "\n";
+    document.write("<br>");
 }
-console.log(tri_left + tri_right);
 
+
+document.write("<br>");
 
 // 6.
 
 let x = 6;
-let hash = "";
 for (let i = 1; i <= x; i++) {
     for (let j = 0; j < i; j++) {
-        hash = hash + "#";
+        document.write("#");
     }
-    hash = hash + "\n";
+    document.write("<br>");
 }
-console.log(hash);
+
+document.write("<br>");
+
+// Have an array stored with random numbers. 
+// Take a number from the user through input. 
+//  Display the possible numbers from array whose addition is 
+// equal to the the user inputted number.
+
 
 
 
