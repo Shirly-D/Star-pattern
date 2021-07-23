@@ -144,6 +144,8 @@ function random(input, sum)
     }
 }
 
+random(input, sum);
+
 
 
 
