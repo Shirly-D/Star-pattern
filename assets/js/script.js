@@ -61,8 +61,10 @@ for (let i = 1; i < c; i++) {
     document.write("<br>");
 }
 
-let d = 5;
-for (let i = 0; i <= d; i++) {
+document.write("<br>");
+
+let d = 4;
+for (let i = 1; i <= d; i++) {
     for (let j = 1; j <= i; j++) {
         document.write("&nbsp; ");
     }
@@ -122,6 +124,25 @@ document.write("<br>");
 //  Display the possible numbers from array whose addition is 
 // equal to the the user inputted number.
 
+var sum = Number.parseInt(window.prompt("Enter the number: "));
+
+let input = [1, 3, 5, 6, 4, 3, 5];
+
+
+function random(input, sum) 
+{
+    for (let i = 0; i < input.length; i++)
+    {
+        for (let j = i+1; j < input.length; j++)
+        {
+            if (input[i] + input[j] == sum)
+            {
+                document.write("(" + input[i] + "," + input[j] + ")");
+                document.write("<br>");
+            }
+        }
+    }
+}
 
 
 
