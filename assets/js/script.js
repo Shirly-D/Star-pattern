@@ -2,8 +2,6 @@
 
 */
 
-// 1.
-
 
 // 2.
 
@@ -63,12 +61,12 @@ for (let i = 1; i < c; i++) {
 
 document.write("<br>");
 
-let d = 4;
-for (let i = 1; i <= d; i++) {
+let d = 5;
+for (let i = 1; i < d; i++) {
     for (let j = 1; j <= i; j++) {
         document.write("&nbsp; ");
     }
-    for (let k = i; k <= n; k++){
+    for (let k = i; k <= d; k++){
         document.write("*");
     }
     document.write("<br>");
@@ -104,8 +102,33 @@ for (let i = 0; i < f; i++) {
     document.write("<br>");
 }
 
+document.write("<br>");
+
+let g = 5;
+for (let i = 1; i <= g; i++) {
+    for (let j = i; j <= g; j++){
+        document.write("&nbsp; ");
+    }
+    for (let k = 1; k <= i  ; k++) {
+        document.write("*");
+    }
+    document.write("<br>");
+}
+
+let h = 5;
+for (let i = 1; i <= h; i++) {
+    for (let j = 1; j <= i; j++) {
+        document.write("&nbsp; ");
+    }
+    for (let k = i; k <= h; k++){
+        document.write("*");
+    }
+    document.write("<br>");
+}
 
 document.write("<br>");
+
+
 
 // 6.
 
